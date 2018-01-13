@@ -70,12 +70,16 @@ mac安装mysql，不要直接安装，用brew install：：否则会找不到soc
 		sudo rm -rf /Library/StartupItems/MySQLCOM
 		sudo rm -rf /Library/PreferencePanes/My*
 		launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+		
 		edit /etc/hostconfig and remove the line MYSQLCOM=-YES-
+
 		rm -rf ~/Library/PreferencePanes/My*
 		sudo rm -rf /Library/Receipts/mysql*
 		sudo rm -rf /Library/Receipts/MySQL*
 		sudo rm -rf /private/var/db/receipts/*mysql*
+
 		edit ~/.bash_profile and remove any aliases for mysql or mysqlAdmin
+
 		restart your computer just to ensure any MySQL processes are killed try to run mysql, it shouldn't work
 
 	－－Reinstall MySQL with Homebrew
