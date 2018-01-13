@@ -60,6 +60,7 @@ mac下查找文件：：
 
 mac安装mysql，不要直接安装，用brew install：：否则会找不到sock文件：：
 	－－Remove MySQL completely
+	
 		ps -ax | grep mysql stop and kill any MySQL processes
 		brew remove mysql
 		brew cleanup
@@ -70,7 +71,7 @@ mac安装mysql，不要直接安装，用brew install：：否则会找不到soc
 		sudo rm -rf /Library/StartupItems/MySQLCOM
 		sudo rm -rf /Library/PreferencePanes/My*
 		launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
-		
+
 		edit /etc/hostconfig and remove the line MYSQLCOM=-YES-
 
 		rm -rf ~/Library/PreferencePanes/My*
